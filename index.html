@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignBridge - Real-time Sign Language Translator</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SignBridge</h1>
+            <p>Real-time Sign Language Translator with Emotional Context</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="video-container">
+                <video id="webcam" autoplay playsinline></video>
+                <canvas id="output-canvas" class="overlay"></canvas>
+            </div>
+            
+            <div class="translation-panel">
+                <div class="translation-history" id="translation-history"></div>
+                <div class="current-translation" id="current-translation"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="enable-camera">Enable Camera</button>
+            <button id="demo-mode">Run Demo Mode</button>
+            <button id="clear-translation">Clear</button>
+            <button id="export-log">Export Log</button>
+            <button id="settings-btn">Settings</button>
+        </div>
+        
+        <div id="settings-modal" class="modal">
+            <!-- Settings content -->
+        </div>
+    </div>
+    
+    <script src="src/app.js"></script>
+</body>
+</html>

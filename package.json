@@ -1,0 +1,12 @@
+{
+  "name": "signbridge",
+  "version": "1.0.0",
+  "description": "Real-time sign language translator",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "echo 'Open index.html in browser'",
+    "build": "echo 'No build step needed for vanilla JS'"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
