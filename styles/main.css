@@ -1,0 +1,46 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.video-container {
+  position: relative;
+  background: #1e2937;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#webcam, #output-canvas {
+  width: 100%;
+  max-height: 600px;
+  display: block;
+}
+
+.controls button {
+  padding: 12px 24px;
+  margin: 8px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.translation-panel {
+  background: #1e2937;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.neon-glow {
+  text-shadow: 0 0 10px #22d3ee;
+}
